@@ -1,6 +1,8 @@
 //キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
-var urlsToCache = ['/192.168.3.179:5500/',];
+var urlsToCache = [
+    '/poster-keisuke.github.io/',
+];
 
 //インストール処理
 self.addEventListener('insrall',function(event)
