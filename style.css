@@ -1,0 +1,8 @@
+.hai{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hai > *{
+    width: 6%;
+    height: 6%;
+  }
