@@ -1,8 +1,26 @@
+h1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0%;
+}
 .hai{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .hai > *{
-    width: 6%;
-    height: 6%;
-  }
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.hai > *{
+  width: 7%;
+  height: 6.5%;
+}
+h2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1%;
+}
+.column {
+  height: 100vh;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+}
