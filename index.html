@@ -10,50 +10,108 @@
         <title>PWA Sample</title>
     </head>
     <body>
-        <h1>麻雀 点数計算</h1>
-        <div class="hai">
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
-        
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
-        
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
-            <img src="pai.png">
+        <h2 class="title">手牌</h2>
+        <div class="tehai">
+            <img src="m1.png">
+            <img src="m1.png">
+            <img src="m1.png">
+            <img src="m2.png">
+            <img src="m3.png">
+            
+            <img src="m4.png">
+            <img src="m5.png">
+            <img src="m5_a.png">
+            <img src="m6.png">
+            <img src="m7.png">
+            
+            <img src="m8.png">
+            <img src="m9.png">
+            <img src="m9.png">
+            <img src="m9.png">
         </div>
         <div class="wrapper">
-            <div class="column dora">
+            <div class="column_dora">
                 <div class="info">
-                    <h2>ドラ</h2>
-                    <div class="dora">
-                            <img src="pai.png">
-                            <img src="pai.png">
-                            <img src="pai.png">
-                            <img src="pai.png">
-                            <img src="pai.png">
-                        
-                            <img src="pai.png">
-                            <img src="pai.png">
-                            <img src="pai.png">
-                            <img src="pai.png">
-                            <img src="pai.png">
+                    <h2 class="title">ドラ</h2>
+                    <div class="dora1">
+                        <img src="m1.png">
+                        <img src="m1.png">
+                        <img src="m1.png">
+                        <img src="m1.png">
+                        <img src="m1.png">
+                    </div>
+                    <div class="dora2">
+                        <img src="m2.png">
+                        <img src="m2.png">
+                        <img src="m2.png">
+                        <img src="m2.png">
+                        <img src="m2.png">
                     </div>
                 </div>
             </div>
-            <div class="column yaku">
+            <div class="column_kaze">
                 <div class="info">
-                    <h2>役</h2>
+                    <h2 class="title">風牌</h2>
+                    <h3>場風</h3>
+                    <img src="ton.png" class="kazehai"><br>
+                    <h3>自風</h3>
+                    <img src="ton.png" class="kazehai">
+                </div>
+            </div>
+            <div class="column_yaku">
+                <div class="info">
+                    <h2 class="title">役</h2>
+                    <div class="wrapper_yaku">
+                        <div class="yaku">
+                            <div class="checkbox box">
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">ツモ</span>
+                                </label>
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">リーチ</span>
+                                </label>
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">ダブルリーチ</span>
+                                </label>
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">海底・河底</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="yaku">
+                            <div class="checkbox box">
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">一発</span>
+                                </label>
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">嶺上開花</span>
+                                </label>
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">槍槓</span>
+                                </label>
+                                <label>
+                                    <input class="checkbox-input" name="checkbox[]" type="checkbox" />
+                                    <span class="checkbox-parts">天和・地和</span>
+                                </label>
+                            </div>                          
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <button type="button">
+            撮りなおす
+        </button>
+        <button type="button">
+            計算する
+        </button>
         <script>
             //<!--service workerの登録関係 -->
             if('serviceWorker' in navigator)
