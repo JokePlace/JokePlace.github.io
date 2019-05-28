@@ -12,50 +12,54 @@
     <body>
         <h2 class="title">手牌</h2>
         <div class="tehai">
-            <img src="m1.png">
-            <img src="m1.png">
-            <img src="m1.png">
-            <img src="m2.png">
-            <img src="m3.png">
+            <img src="hai/m1.png">
+            <img src="hai/m1.png">
+            <img src="hai/m1.png">
+            <img src="hai/m2.png">
+            <img src="hai/m3.png">
             
-            <img src="m4.png">
-            <img src="m5.png">
-            <img src="m5_a.png">
-            <img src="m6.png">
-            <img src="m7.png">
+            <img src="hai/m4.png">
+            <img src="hai/m5.png">
+            <img src="hai/m5.png">
+            <img src="hai/m6.png">
+            <img src="hai/m7.png">
             
-            <img src="m8.png">
-            <img src="m9.png">
-            <img src="m9.png">
-            <img src="m9.png">
+            <img src="hai/m8.png">
+            <img src="hai/m9.png">
+            <img src="hai/m9.png">
+            <img src="hai/m9.png">
         </div>
         <div class="wrapper">
             <div class="column_dora">
                 <div class="info">
                     <h2 class="title">ドラ</h2>
                     <div class="dora1">
-                        <img src="m1.png">
-                        <img src="m1.png">
-                        <img src="m1.png">
-                        <img src="m1.png">
-                        <img src="m1.png">
+                        <img src="hai/p1.png">
+                        <img src="hai/s1.png">
+                        <img src="hai/error.png">
+                        <img src="hai/error.png">
+                        <img src="hai/error.png">
                     </div>
                     <div class="dora2">
-                        <img src="m2.png">
-                        <img src="m2.png">
-                        <img src="m2.png">
-                        <img src="m2.png">
-                        <img src="m2.png">
+                        <img src="hai/error.png">
+                        <img src="hai/error.png">
+                        <img src="hai/error.png">
+                        <img src="hai/error.png">
+                        <img src="hai/error.png">
                     </div>
                 </div>
             </div>
             <div class="column_kaze">
                 <div class="info">
                     <h2 class="title">風牌</h2>
-                    <h3>場風</h3>
-                    <img src="ton.png" class="kazehai"><br>
-                    <h3>自風</h3>
-                    <img src="ton.png" class="kazehai">
+                    <div class="bakaze">
+                        <h3>場風</h3>
+                        <img src="hai/ton.png" class="kazehai" id="bakaze" onclick="changebakaze()">
+                    </div>
+                    <div class="jikaze">
+                        <h3>自風</h3>
+                        <img src="hai/ton.png" class="kazehai" id="jikaze" onclick="changejikaze()">
+                    </div>
                 </div>
             </div>
             <div class="column_yaku">
@@ -123,6 +127,29 @@
                 {
                     console.log('ServiceWorker registration faild: ',err);
                 });
+            }
+
+            // クリックしたら風を変える
+            var kaze_src = new Array("hai/ton.png","hai/nan.png","hai/sya.png","hai/pe.png");
+            var num = 0;
+
+            function changebakaze(){
+                if (num == 3){
+                    num = 0;
+                }
+                else {
+                    num++;
+                }
+                document.getElementById("bakaze").src = kaze_src[num];
+            }
+            function changejikaze(){
+                if (num == 3){
+                    num = 0;
+                }
+                else {
+                    num++;
+                }
+                document.getElementById("jikaze").src = kaze_src[num];
             }
         </script>
     </body>
