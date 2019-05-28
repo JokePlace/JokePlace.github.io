@@ -1,8 +1,98 @@
-.hai{
+* {
+    margin: 0%; padding: 0%;
+}
+
+h2.title {
+    line-height: 13vh;
+    text-align: center;
+    height: 12vh;
+}
+
+.tehai {
     display: flex;
     justify-content: space-evenly;
-  }
-  .hai > *{
-    width: 6%;
-    height: 6%;
-  }
+    height: 21vh;
+}
+.tehai > *{
+    height: 21vh;
+    width: 7vw;
+}
+
+.wrapper {
+    display: flex;
+}
+.column_dora {
+    height: 55vh;
+    width: 48vw;
+}
+.column_kaze {
+    height: 55vh;
+    width: 16vw;
+    border-left: 1px dotted #000;
+    border-right: 1px dotted #000;
+}
+.column_yaku {
+    height: 55vh;
+    width: 36vw;
+}
+.dora1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.dora1 > *{
+    width: 9vw;
+    height: 18vh;
+}
+.dora2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+}
+.dora2 > *{
+    width: 9vw;
+    height: 18vh;
+}
+
+h3 {
+    float: left;
+    margin: 1vh;
+}
+.kazehai {
+    width: 9vw;
+    height: 18vh;
+}
+
+.wrapper_yaku {
+    display: flex;
+}
+.yaku {
+    height: 37vh;
+    width: 36vw;
+}
+
+.checkbox-input{
+    display: none;
+}
+.checkbox-parts{
+    margin-left: 0.5vw;
+    text-align: center;
+    position: relative;
+    padding: 10px 0px 10px 0px;
+    color: #444;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display:inline-block;
+    line-height:1;
+    width: 17vw;
+}
+.checkbox-input:checked + .checkbox-parts{
+    background: #ff555e;
+    color: #fff;
+    border: 1px solid #ff555e;
+}
+
+button {
+    float: left;
+    height: 12vh;
+    width: 50vw;
+}
