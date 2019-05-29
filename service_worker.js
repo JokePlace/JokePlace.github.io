@@ -5,7 +5,7 @@ var urlsToCache = [
 ];
 
 //インストール処理
-self.addEventListener('insrall',function(event)
+self.addEventListener('install',function(event)
 {
     event.waitUntil(
         caches
