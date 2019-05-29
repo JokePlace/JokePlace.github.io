@@ -20,19 +20,19 @@ function modal_open(hai_id) {
 
 	//オーバーレイを出現させる
 	$( "body" ).append( '<div id="modal-overlay"></div>' ) ;
-	$( "#modal-overlay" ).fadeIn( "slow" ) ;
+	$( "#modal-overlay" ).fadeIn( "fast" ) ;
 
 	//コンテンツをセンタリングする
 	centeringModalSyncer() ;
 
 	//コンテンツをフェードインする
-	$( "#modal-content" ).fadeIn( "slow" ) ;
+	$( "#modal-content" ).fadeIn( "fast" ) ;
 
 	//[#modal-overlay]、または[#modal-close]をクリックしたら…
 	$( "#modal-overlay,#modal-close" ).unbind().click( function(){
 
 		//[#modal-content]と[#modal-overlay]をフェードアウトした後に…
-		$( "#modal-content,#modal-overlay" ).fadeOut( "slow" , function(){
+		$( "#modal-content,#modal-overlay" ).fadeOut( "fast" , function(){
 
 			//[#modal-overlay]を削除する
 			$('#modal-overlay').remove() ;
@@ -45,7 +45,7 @@ function modal_open(hai_id) {
 function hai_change(src_set){
     var src_name = src_set;
     document.getElementById(set_id).src = src_name;
-    $( "#modal-content,#modal-overlay" ).fadeOut( "slow" , function(){
+    $( "#modal-content,#modal-overlay" ).fadeOut( "fast" , function(){
 
         //[#modal-overlay]を削除する
         $('#modal-overlay').remove() ;
