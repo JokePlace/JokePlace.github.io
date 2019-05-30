@@ -1,11 +1,11 @@
 //キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    '/poster-keisuke.github.io/',
+    '/jokeplace.github.io/',
 ];
 
 //インストール処理
-self.addEventListener('insrall',function(event)
+self.addEventListener('install',function(event)
 {
     event.waitUntil(
         caches
@@ -17,6 +17,7 @@ self.addEventListener('insrall',function(event)
     );
 });
 
+/*
 //リソースフェッチ時のキャッシュロード処理
 self.addEventListener('fetch',function(event)
 {
@@ -29,3 +30,4 @@ self.addEventListener('fetch',function(event)
             })
     );
 });
+*/
