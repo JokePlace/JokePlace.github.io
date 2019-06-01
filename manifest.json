@@ -1,6 +1,6 @@
 {
-    "short_name":"PWA-jp",
-    "name":"PWA_jp",
+    "short_name":"PWA-jp06011125",
+    "name":"PWA_jp06011125",
     "icons": 
     [
         {
@@ -35,6 +35,6 @@
         }
     ],
     "display":"standalone",
-    "start_url":"/",
+    "start_url":"index.html",
     "orientation": "landscape"
 }
