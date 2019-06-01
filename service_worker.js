@@ -17,7 +17,7 @@ self.addEventListener('install',function(event)
     );
 });
 
-/*
+
 //リソースフェッチ時のキャッシュロード処理
 self.addEventListener('fetch',function(event)
 {
@@ -30,4 +30,3 @@ self.addEventListener('fetch',function(event)
             })
     );
 });
-*/
